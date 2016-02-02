@@ -5,9 +5,9 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = "The weather is " +data.currently.temperature;
+    var markup = "<h1> Today's Weather Is: </h1>" + "The temperature is " +data.currently.temperature +" degrees";
     markup=markup + " and the current weather is " +data.currently.summary + ".";
-    markup=markup + "Tomorrow the weather will be " +data.daily.data[1].summary;
+    markup=markup + "<h1> Upcoming Weather Is: </h1>" + "Tomorrow the weather will be " +data.daily.data[1].summary;
     markup=markup + "The day after will be " +data.daily.data[2].summary;
     markup=markup + " 3 days from today the weather will be " +data.daily.data[3].summary;
     // End of your code
